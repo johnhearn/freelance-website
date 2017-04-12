@@ -176,7 +176,7 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                text-transform: lowercase;
                 margin-top: 0;
                 margin-bottom: 0;
                 font-size: 30px;
@@ -189,6 +189,10 @@ header {
                 color: fade(white, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
+            }
+            span {
+              .console-font;
+              background-color: fade(@theme-primary, 80%);
             }
         }
     }
@@ -209,10 +213,15 @@ header {
                     font-size: 80px;
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 22px;
                     max-width: 80%;
+                    font-weight: 200;
                     margin-left: auto;
                     margin-right: auto;
+                }
+                span {
+                  .console-font;
+                  background-color: fade(@theme-primary, 80%);
                 }
             }
         }
@@ -318,14 +327,16 @@ header {
 
 .btn-primary {
     .button-variant(white;@theme-primary;@theme-primary);
+    background-color: fade(@theme-primary, 80%);
 }
 
 .btn {
     .sans-serif-font;
     border: none;
     border-radius: 300px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+//    text-transform: uppercase;
 }
 
 .btn-xl {
